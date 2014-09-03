@@ -6,8 +6,8 @@ Many cheap USB wifi dongles use the MT7601U chip
 <img src="http://porjo.github.io/mt7601/dongle2.jpg" width="150">
 
 Unfortunately, the driver is not part of the Linux kernel source tree (yet?). This repository contains:
-* source code from [DPO_MT7601U_LinuxSTA_3.0.0.4_20130913.tar.bz2](http://www.mediatek.com/en/downloads/mt7601u-usb/) (md5sum 5f440dccc8bc952745a191994fc34699) 
-* file DPO_MT7601U_LinuxSTA_3.0.0.4_20130913-Linux-3.17.0-v2.patch
+* source code from [`DPO_MT7601U_LinuxSTA_3.0.0.4_20130913.tar.bz2`](http://www.mediatek.com/en/downloads/mt7601u-usb/) (md5sum `5f440dccc8bc952745a191994fc34699`) 
+* file `DPO_MT7601U_LinuxSTA_3.0.0.4_20130913-Linux-3.17.0-v2.patch`
  has been applied
 
 The patch improves stability and performance for kernels >= 3.x
