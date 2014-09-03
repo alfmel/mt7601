@@ -69,4 +69,4 @@ Tested with kernels:
 
 **Source code:** (c) Copyright 2002-2013, MediaTek Inc. (released under GPLv2)
 
-**Patch:** @goma at [linux-wireless](http://wireless.kernel.org/en/developers/MailingLists) mailing list
+**Patch:** @poma at [linux-wireless](http://wireless.kernel.org/en/developers/MailingLists) mailing list
