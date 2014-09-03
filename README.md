@@ -1,6 +1,6 @@
 ## MT7601U Linux driver
 
-Many cheap USB wifi dongles use the MT7601U chip
+Many cheap USB wifi dongles use the MT7601U chip.
 
 <img src="http://porjo.github.io/mt7601/dongle1.jpg" width="150">
 <img src="http://porjo.github.io/mt7601/dongle2.jpg" width="150">
@@ -20,10 +20,14 @@ First install kernel-devel for your Linux distro
 git clone https://github.com/porjo/mt7601.git
 cd mt7601/src
 make
-sudo insmod os/linux/mt7601Usta.ko
+mkdir -p /etc/Wireless/RT2870STA/
+cp RT2870STA.dat /etc/Wireless/RT2870STA/
+insmod os/linux/mt7601Usta.ko
 ```
 
-If the module has loaded OK, you should see `mt7601Usta` listed in the output of `lsmod` and a new network interface `ra0` should be present in the output of `ip link`
+If the module has loaded OK, you should see `mt7601Usta` listed in the output of `lsmod` and a new network interface `ra0` should be present in the output of `ip link`.
+
+If all goes well, you can permanently install the driver with `make install`.
 
 ### History
 
@@ -62,8 +66,6 @@ Tested with kernels:
 - 3.16.1-301.fc21.i686
 - 3.17.0-0.rc2.git3.1.fc22.i686
 ```
-
-
 
 ### Credits
 
